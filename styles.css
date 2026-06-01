@@ -186,6 +186,15 @@ a:hover { text-decoration: underline; }
 .pub-list em { color: var(--text-soft); }
 .pub-list strong { color: var(--text); }
 .pub-list a { font-weight: 600; white-space: nowrap; }
+.pub-note {
+  margin-top: 0.35rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--border);
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.pub-note em { color: var(--text-soft); }
 
 /* News — casual feed */
 .news-list { list-style: none; padding: 0; margin: 0; }
