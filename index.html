@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tamir Eliav</title>
-  <meta name="description" content="Personal research website of Tamir Eliav." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <title>Tamir Eliav — Systems Neuroscience</title>
+  <meta name="description" content="Tamir Eliav — postdoctoral researcher in systems neuroscience at the Max Planck Institute for Biological Intelligence, studying neural circuits for vocal communication and the hippocampal representation of space and memory." />
+  <meta property="og:title" content="Tamir Eliav — Systems Neuroscience" />
+  <meta property="og:description" content="Postdoctoral researcher studying neural circuits for vocal communication and hippocampal coding of space and memory." />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
 </head>
@@ -19,7 +21,8 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#honors">Honors</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
@@ -31,23 +34,22 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero container">
       <div class="hero-photo">
-        <!-- TODO: replace assets/photo.jpg with your headshot, or remove this block -->
         <img src="assets/photo.jpg" alt="Tamir Eliav" onerror="this.classList.add('placeholder'); this.alt='';" />
       </div>
       <div class="hero-text">
         <h1>Tamir Eliav</h1>
-        <p class="tagline">
-          <!-- TODO: your title, e.g. "PhD candidate in Neuroscience at …" -->
-          Researcher &middot; [Your title / affiliation]
-        </p>
+        <p class="tagline">Postdoctoral Researcher · Systems Neuroscience</p>
         <p class="lead">
-          <!-- TODO: 1–2 sentence summary of what you study -->
-          I study [your research area]. My work focuses on [topic], with an emphasis on
-          [methods / questions you care about].
+          I study how neural circuits represent the world and guide natural behavior &mdash;
+          from the hippocampal coding of space and memory in freely flying bats, to the
+          neural circuits underlying vocal communication.
+        </p>
+        <p class="affil">
+          Vallentin Lab &middot; Max Planck Institute for Biological Intelligence, Seewiesen, Germany
         </p>
         <div class="hero-links">
           <a class="btn btn-primary" href="#contact">Get in touch</a>
-          <a class="btn" href="#cv">View CV</a>
+          <a class="btn" href="assets/cv.pdf" download>Download CV</a>
         </div>
       </div>
     </section>
@@ -56,74 +58,190 @@
     <section id="about" class="container section">
       <h2>About</h2>
       <p>
-        <!-- TODO: 2–4 sentence bio -->
-        I'm a researcher working at [institution / lab]. Before that, I [background].
-        I'm broadly interested in [interests], and I enjoy [methods, collaboration, etc.].
+        I'm a postdoctoral researcher in the <strong>Vallentin lab</strong> at the
+        Max Planck Institute for Biological Intelligence in Seewiesen, Germany, where I
+        study the neural circuits that underlie vocal communication.
+      </p>
+      <p>
+        I completed my PhD and MSc with Prof. Nachum Ulanovsky at the
+        <strong>Weizmann Institute of Science</strong>, studying how the hippocampus
+        represents space and memory in freely flying bats navigating very large
+        environments. Before neuroscience, I earned a BSc in pure mathematics from
+        Bar-Ilan University and spent several years working on embedded software and
+        algorithm R&amp;D. I'm drawn to questions at the intersection of neural
+        computation, naturalistic behavior, and the mathematics of how the brain
+        encodes information.
       </p>
     </section>
 
     <!-- ===================== RESEARCH ===================== -->
     <section id="research" class="container section">
-      <h2>Research Interests</h2>
+      <h2>Research</h2>
       <ul class="tags">
-        <!-- TODO: replace with your interest keywords -->
-        <li>Interest one</li>
-        <li>Interest two</li>
-        <li>Interest three</li>
-        <li>Interest four</li>
+        <li>Systems neuroscience</li>
+        <li>Hippocampus &amp; spatial memory</li>
+        <li>Neural coding</li>
+        <li>Navigation</li>
+        <li>Vocal communication</li>
+        <li><em>In&nbsp;vivo</em> electrophysiology</li>
       </ul>
       <p>
-        <!-- TODO: expand on your research interests -->
-        A short paragraph describing the questions that drive your research and why they
-        matter.
+        My research asks how the brain represents complex, naturalistic behavior at the
+        level of neural circuits. I combine large-scale electrophysiology with quantitative
+        analysis and theory to understand how populations of neurons encode information.
       </p>
-    </section>
 
-    <!-- ===================== PROJECTS ===================== -->
-    <section id="projects" class="container section">
-      <h2>Ongoing Projects</h2>
       <div class="cards">
-        <!-- TODO: duplicate / edit these project cards -->
         <article class="card">
-          <h3>Project title</h3>
-          <p>One- or two-sentence description of the project and your role in it.</p>
-          <a href="#" class="card-link">Learn more →</a>
+          <h3>Neural circuits for vocal communication</h3>
+          <p>
+            <span class="badge">Current</span>
+            Investigating how neural circuits support vocal communication and vocal learning
+            &mdash; how the brain produces, controls, and coordinates communication signals.
+          </p>
         </article>
         <article class="card">
-          <h3>Project title</h3>
-          <p>One- or two-sentence description of the project and your role in it.</p>
-          <a href="#" class="card-link">Learn more →</a>
+          <h3>Hippocampal coding of very large spaces</h3>
+          <p>
+            How the hippocampus represents space across scales in freely flying bats,
+            revealing multiscale place codes and nonoscillatory phase coding in natural,
+            large-scale environments.
+          </p>
         </article>
         <article class="card">
-          <h3>Project title</h3>
-          <p>One- or two-sentence description of the project and your role in it.</p>
-          <a href="#" class="card-link">Learn more →</a>
+          <h3>Memory replay in natural environments</h3>
+          <p>
+            Characterizing how the hippocampus replays experience in environments far larger
+            than the classic laboratory setting, including fragmented replay of very large
+            spaces.
+          </p>
         </article>
       </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" class="container section">
+      <h2>Selected Publications</h2>
+      <p class="muted">
+        <sup>*</sup>Equal contribution. See my
+        <a href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener">Google&nbsp;Scholar</a>
+        profile for the full list. <!-- TODO: paste your Scholar profile URL -->
+      </p>
+      <ol class="pub-list">
+        <li>
+          Maimon, S.R.<sup>*</sup>, <strong>Eliav, T.</strong><sup>*</sup>, Aljadeff, J.,
+          Shalev, A., Gronich, Y., Finger, N.M., Eveland, K.E., Moss, C.F., Las, L.,
+          Ulanovsky, N. (2026). Sparse-to-dense coding transformation between hippocampal
+          subregions CA3 and CA1. <em>Nature</em>.
+        </li>
+        <li>
+          Palgi, S., Ray, S., Maimon, S.R., Waserman, Y., Ben-Ari, L.,
+          <strong>Eliav, T.</strong>, Tuval, A., Cohen, C., Keyyu, J., Ali, A.I.,
+          Mouritsen, H., Las, L., Ulanovsky, N. (2025). Head-direction cells as a neural
+          compass in bats navigating outdoors on a remote oceanic island. <em>Science</em>.
+        </li>
+        <li>
+          <strong>Eliav, T.</strong><sup>*</sup>, Maimon, S.R.<sup>*</sup>, Sarel, A.,
+          Palgi, S., Blum, D., Las, L., Ulanovsky, N. (2025). Fragmented replay of very
+          large environments in the hippocampus of bats. <em>Cell</em>.
+        </li>
+        <li>
+          <strong>Eliav, T.</strong><sup>*</sup>, Maimon, S.R.<sup>*</sup>, Aljadeff, J.,
+          Tsodyks, M., Ginosar, G., Las, L., Ulanovsky, N. (2021). Multiscale representation
+          of very large environments in the hippocampus of flying bats. <em>Science</em>,
+          372, eabg4020.
+          <a href="https://www.science.org/doi/10.1126/science.abg4020" target="_blank" rel="noopener">[link]</a>
+        </li>
+        <li>
+          <strong>Eliav, T.</strong>, Geva-Sagiv, M., Yartsev, M.M., Finkelstein, A.,
+          Rubin, A., Las, L., Ulanovsky, N. (2018). Nonoscillatory phase coding and
+          synchronization in the bat hippocampal formation. <em>Cell</em>, 175,
+          1119&ndash;1130.e15.
+          <a href="https://www.cell.com/cell/abstract/S0092-8674(18)31229-7" target="_blank" rel="noopener">[link]</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== HONORS ===================== -->
+    <section id="honors" class="container section">
+      <h2>Selected Awards &amp; Honors</h2>
+      <ul class="honor-list">
+        <li><span class="year">2025&ndash;27</span> Klaus Tschira Boost Fund</li>
+        <li><span class="year">2022&ndash;23</span> Rothschild Postdoctoral Fellowship <span class="muted">— top 14 Israeli postdoctoral scholars across all sciences &amp; engineering</span></li>
+        <li><span class="year">2022</span> John F. Kennedy Prize for outstanding PhD research, Weizmann Institute of Science</li>
+        <li><span class="year">2022</span> FENS&ndash;Kavli Network of Excellence PhD Thesis Prize &mdash; finalist</li>
+        <li><span class="year">2022</span> Lee A. Segel Prize in Theoretical Biology</li>
+        <li><span class="year">2020</span> Otto Schwarz Academic Excellence Award</li>
+        <li><span class="year">2017&ndash;21</span> Maccabim Foundation Excellence Scholarship for PhD students</li>
+        <li><span class="year">2014, 2017</span> Best Poster Award, Israel Society for Neuroscience (ISFN) Annual Meeting</li>
+      </ul>
+    </section>
+
+    <!-- ===================== EDUCATION / TIMELINE ===================== -->
+    <section id="education" class="container section">
+      <h2>Education &amp; Positions</h2>
+      <ul class="timeline">
+        <li>
+          <span class="t-date">2022&ndash;present</span>
+          <div class="t-body">
+            <h3>Postdoctoral Researcher</h3>
+            <p>Max Planck Institute for Biological Intelligence, Seewiesen, Germany<br />
+            Vallentin lab — Neural Circuits for Vocal Communication</p>
+          </div>
+        </li>
+        <li>
+          <span class="t-date">2015&ndash;2022</span>
+          <div class="t-body">
+            <h3>PhD in Neuroscience</h3>
+            <p>Weizmann Institute of Science, Rehovot, Israel<br />
+            Advisor: Prof. Nachum Ulanovsky · Dissertation: <em>Nonoscillatory phase coding
+            and multiscale representation of very large environments in the bat hippocampus</em></p>
+          </div>
+        </li>
+        <li>
+          <span class="t-date">2013&ndash;2015</span>
+          <div class="t-body">
+            <h3>MSc in Neuroscience</h3>
+            <p>Weizmann Institute of Science, Rehovot, Israel<br />
+            Advisor: Prof. Nachum Ulanovsky</p>
+          </div>
+        </li>
+        <li>
+          <span class="t-date">2006&ndash;2011</span>
+          <div class="t-body">
+            <h3>Embedded Software &amp; Algorithm R&amp;D</h3>
+            <p>Israel Defense Forces</p>
+          </div>
+        </li>
+        <li>
+          <span class="t-date">2003&ndash;2006</span>
+          <div class="t-body">
+            <h3>BSc in Pure Mathematics</h3>
+            <p>Bar-Ilan University, Ramat-Gan, Israel · Dean's Honors List, Faculty of Exact Sciences</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- ===================== CV ===================== -->
     <section id="cv" class="container section">
       <h2>Curriculum Vitae</h2>
-      <p>
-        <!-- TODO: drop your CV PDF in assets/ and update the link -->
-        You can download my full CV as a PDF.
-      </p>
+      <p>Download my full CV, including the complete list of publications, talks, teaching, and mentoring.</p>
       <a class="btn btn-primary" href="assets/cv.pdf" download>Download CV (PDF)</a>
     </section>
 
     <!-- ===================== CONTACT ===================== -->
     <section id="contact" class="container section">
       <h2>Contact &amp; Links</h2>
-      <p>Reach out or find me online:</p>
+      <p>I'm always happy to talk science, collaborations, and ideas. Find me here:</p>
       <ul class="links">
         <li><a href="mailto:tamir.eliav@gmail.com">✉ Email</a></li>
         <li><a href="https://github.com/TamirEliav" target="_blank" rel="noopener">GitHub</a></li>
-        <!-- TODO: add/remove as needed -->
-        <li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
-        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://twitter.com/tamir_eliav" target="_blank" rel="noopener">Twitter / X</a></li>
+        <!-- TODO: paste real URLs (or delete the line) -->
+        <li><a href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="#" target="_blank" rel="noopener">ORCID</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </section>
   </main>
