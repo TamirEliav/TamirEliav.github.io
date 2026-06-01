@@ -199,8 +199,8 @@ a:hover { text-decoration: underline; }
 /* News — casual feed */
 .news-list { list-style: none; padding: 0; margin: 0; }
 .news-list li {
-  padding: 0.55rem 0;
-  line-height: 1.6;
+  padding: 0.18rem 0;
+  line-height: 1.5;
   color: var(--text-soft);
 }
 .news-list .news-date {
