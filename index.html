@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamir Eliav</title>
+  <meta name="description" content="Personal research website of Tamir Eliav." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="brand">Tamir Eliav</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero container">
+      <div class="hero-photo">
+        <!-- TODO: replace assets/photo.jpg with your headshot, or remove this block -->
+        <img src="assets/photo.jpg" alt="Tamir Eliav" onerror="this.classList.add('placeholder'); this.alt='';" />
+      </div>
+      <div class="hero-text">
+        <h1>Tamir Eliav</h1>
+        <p class="tagline">
+          <!-- TODO: your title, e.g. "PhD candidate in Neuroscience at …" -->
+          Researcher &middot; [Your title / affiliation]
+        </p>
+        <p class="lead">
+          <!-- TODO: 1–2 sentence summary of what you study -->
+          I study [your research area]. My work focuses on [topic], with an emphasis on
+          [methods / questions you care about].
+        </p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn" href="#cv">View CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>
+        <!-- TODO: 2–4 sentence bio -->
+        I'm a researcher working at [institution / lab]. Before that, I [background].
+        I'm broadly interested in [interests], and I enjoy [methods, collaboration, etc.].
+      </p>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section id="research" class="container section">
+      <h2>Research Interests</h2>
+      <ul class="tags">
+        <!-- TODO: replace with your interest keywords -->
+        <li>Interest one</li>
+        <li>Interest two</li>
+        <li>Interest three</li>
+        <li>Interest four</li>
+      </ul>
+      <p>
+        <!-- TODO: expand on your research interests -->
+        A short paragraph describing the questions that drive your research and why they
+        matter.
+      </p>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="container section">
+      <h2>Ongoing Projects</h2>
+      <div class="cards">
+        <!-- TODO: duplicate / edit these project cards -->
+        <article class="card">
+          <h3>Project title</h3>
+          <p>One- or two-sentence description of the project and your role in it.</p>
+          <a href="#" class="card-link">Learn more →</a>
+        </article>
+        <article class="card">
+          <h3>Project title</h3>
+          <p>One- or two-sentence description of the project and your role in it.</p>
+          <a href="#" class="card-link">Learn more →</a>
+        </article>
+        <article class="card">
+          <h3>Project title</h3>
+          <p>One- or two-sentence description of the project and your role in it.</p>
+          <a href="#" class="card-link">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CV ===================== -->
+    <section id="cv" class="container section">
+      <h2>Curriculum Vitae</h2>
+      <p>
+        <!-- TODO: drop your CV PDF in assets/ and update the link -->
+        You can download my full CV as a PDF.
+      </p>
+      <a class="btn btn-primary" href="assets/cv.pdf" download>Download CV (PDF)</a>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="container section">
+      <h2>Contact &amp; Links</h2>
+      <p>Reach out or find me online:</p>
+      <ul class="links">
+        <li><a href="mailto:tamir.eliav@gmail.com">✉ Email</a></li>
+        <li><a href="https://github.com/TamirEliav" target="_blank" rel="noopener">GitHub</a></li>
+        <!-- TODO: add/remove as needed -->
+        <li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tamir Eliav. Built with plain HTML/CSS, hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
