@@ -187,6 +187,25 @@ a:hover { text-decoration: underline; }
 .pub-list strong { color: var(--text); }
 .pub-list a { font-weight: 600; white-space: nowrap; }
 
+/* News */
+.news-list { list-style: none; padding: 0; margin: 0; }
+.news-list li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.55;
+}
+.news-list li:last-child { border-bottom: none; }
+.news-list .news-date {
+  flex: 0 0 5.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding-top: 0.05rem;
+}
+.news-list a { font-weight: 600; white-space: nowrap; }
+
 /* Honors */
 .honor-list { list-style: none; padding: 0; margin: 0; }
 .honor-list li {
@@ -258,6 +277,6 @@ a:hover { text-decoration: underline; }
   .hero-links { justify-content: center; }
   .hero-text h1 { font-size: 2.1rem; }
 
-  .timeline li, .honor-list li { flex-direction: column; gap: 0.2rem; }
-  .timeline .t-date, .honor-list .year { flex-basis: auto; }
+  .timeline li, .honor-list li, .news-list li { flex-direction: column; gap: 0.2rem; }
+  .timeline .t-date, .honor-list .year, .news-list .news-date { flex-basis: auto; }
 }
