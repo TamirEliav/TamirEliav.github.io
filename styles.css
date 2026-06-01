@@ -208,7 +208,7 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
 }
 .news-list .news-date::after {
-  content: " — ";
+  content: " | ";
   color: var(--text-soft);
   font-weight: 400;
 }
