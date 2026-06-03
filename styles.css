@@ -182,10 +182,30 @@ a:hover { text-decoration: underline; }
 
 /* Publications */
 .pub-list { padding-left: 1.3rem; margin: 0; }
-.pub-list li { margin-bottom: 1rem; line-height: 1.55; }
-.pub-list em { color: var(--text-soft); }
+.pub-list li { margin-bottom: 1.4rem; line-height: 1.5; }
 .pub-list strong { color: var(--text); }
-.pub-list a { font-weight: 600; white-space: nowrap; }
+
+.pub-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--text);
+  line-height: 1.35;
+}
+.pub-title:hover { color: var(--accent); text-decoration: none; }
+.pub-authors {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+.pub-venue {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+.pub-venue em { font-style: italic; }
 .pub-note {
   margin-top: 0.35rem;
   padding-left: 0.9rem;
