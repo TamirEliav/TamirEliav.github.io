@@ -196,6 +196,37 @@ a:hover { text-decoration: underline; }
 }
 .pub-note em { color: var(--text-soft); }
 
+/* Collapsible abstract */
+.abstract-toggle { margin-top: 0.4rem; }
+.abstract-toggle summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.88rem;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: fit-content;
+}
+.abstract-toggle summary::-webkit-details-marker { display: none; }
+.abstract-toggle summary::before {
+  content: "\25B8"; /* ▸ */
+  display: inline-block;
+  font-size: 0.8rem;
+  transition: transform 0.15s ease;
+}
+.abstract-toggle[open] summary::before { transform: rotate(90deg); }
+.abstract-toggle .abstract {
+  margin: 0.5rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--border);
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  text-align: justify;
+}
+
 /* News — casual feed */
 .news-list { list-style: none; padding: 0; margin: 0; }
 .news-list li {
