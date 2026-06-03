@@ -202,7 +202,7 @@ a:hover { text-decoration: underline; }
 .pub-venue {
   display: block;
   margin-top: 0.1rem;
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   color: var(--text-soft);
 }
 .pub-venue em { font-style: italic; }
