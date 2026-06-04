@@ -237,6 +237,24 @@ a:hover { text-decoration: underline; }
   transition: transform 0.15s ease;
 }
 .abstract-toggle[open] summary::before { transform: rotate(90deg); }
+
+/* Inline expand arrow (news) — arrowhead only, on the same line */
+.inline-toggle { display: inline; }
+.inline-toggle summary {
+  display: inline;
+  cursor: pointer;
+  color: var(--accent);
+  list-style: none;
+  margin-left: 0.3rem;
+}
+.inline-toggle summary::-webkit-details-marker { display: none; }
+.inline-toggle summary::before {
+  content: "\25B8"; /* ▸ */
+  display: inline-block;
+  font-size: 0.8rem;
+  transition: transform 0.15s ease;
+}
+.inline-toggle[open] summary::before { transform: rotate(90deg); }
 .abstract-toggle .abstract {
   margin: 0.5rem 0 0;
   padding-left: 0.9rem;
