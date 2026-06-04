@@ -255,7 +255,8 @@ a:hover { text-decoration: underline; }
   transition: transform 0.15s ease;
 }
 .inline-toggle[open] summary::before { transform: rotate(90deg); }
-.abstract-toggle .abstract {
+.abstract-toggle .abstract,
+.inline-toggle .abstract {
   margin: 0.5rem 0 0;
   padding-left: 0.9rem;
   border-left: 2px solid var(--border);
