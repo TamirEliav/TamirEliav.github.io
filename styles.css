@@ -151,7 +151,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Cards */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+.cards { display: grid; grid-template-columns: 1fr; gap: 1.2rem; }
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -161,8 +161,14 @@ a:hover { text-decoration: underline; }
   transition: transform 0.15s ease;
 }
 .card:hover { transform: translateY(-3px); }
-.card h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
-.card p { color: var(--text-soft); margin: 0 0 1rem; font-size: 0.95rem; }
+.card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+.card p { color: var(--text-soft); margin: 0 0 0.8rem; font-size: 0.98rem; line-height: 1.6; }
+.card p:last-child { margin-bottom: 0; }
+.card-q {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.02rem;
+}
 .card-link { font-weight: 600; font-size: 0.9rem; }
 
 .badge {
