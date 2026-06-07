@@ -206,7 +206,7 @@ a:hover { text-decoration: underline; }
   font-size: 1.02rem;
   color: var(--text-soft);
 }
-.pub-venue em { font-style: italic; }
+.pub-venue em { font-style: italic; font-weight: 700; color: var(--text); }
 .pub-note {
   margin-top: 0.35rem;
   padding-left: 0.9rem;
